@@ -1,0 +1,37 @@
+Metadata-Version: 1.1
+Name: adspy
+Version: 0.2.0
+Summary: Simple bibtex tools for use with ADS.
+Home-page: UNKNOWN
+Author: Samuel Skillman <samskillman@gmail.com>
+Author-email: UNKNOWN
+License: GPLv3
+Description: pyads is a simple way of interacting with a bibtex library built primarily from
+        the ADS (http://adsabs.harvard.edu/abstract_service.html). Your mileage may
+        vary, but I've found it useful for quickly looking up cite info.  There are a 
+        lot of improvements that could be made.
+        
+        Here's a short script to start showing the functionality.  I'll try to get get
+        some more docs up here soon.
+        
+        lib = ADSLibrary('test')
+        for t in ["2011ApJ...735...96S", "2008ApJ...689.1063S"]:
+            lib.add_entry(t)
+        lib.write_bib()
+        lib.save()
+        lib.find('Skillman')
+        lib.find('Dinosaur')
+        lib.find('2008ApJ...689.1063S')
+        b = lib.find('Skillman2011')
+        b.download() # Not fully tested
+        b.open() # Also not fully tested.
+        
+        # You would import an exisiting bib library with:
+        # lib.import_bib('library.bib')
+        # lib.save()
+         
+        nn
+Keywords: data
+Platform: UNKNOWN
+Classifier: Programming Language :: Python
+Classifier: Topic :: Software Development :: Libraries :: Python Modules

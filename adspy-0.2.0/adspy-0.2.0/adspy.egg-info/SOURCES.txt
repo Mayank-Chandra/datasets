@@ -1,0 +1,7 @@
+setup.py
+adspy/__init__.py
+adspy/adspy.py
+adspy.egg-info/PKG-INFO
+adspy.egg-info/SOURCES.txt
+adspy.egg-info/dependency_links.txt
+adspy.egg-info/top_level.txt
